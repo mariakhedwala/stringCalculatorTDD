@@ -13,4 +13,12 @@ describe('StringCalculator', () => {
     expect(calculate("1,2")).toBe(3);
   });
 
+  test('should return the sum of an unknown amount of numbers', () => {
+    expect(calculate("1,2,3,4")).toBe(10);
+  });
+
+  test('should handle newlines(\n) between numbers', () => {
+    expect(calculate("1\n2,3")).toBe(6);
+  });
+
 });
