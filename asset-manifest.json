@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/stringCalculatorTDD/static/css/main.d2063e3d.css",
+    "main.js": "/stringCalculatorTDD/static/js/main.0fac3e92.js",
+    "static/js/453.119a1176.chunk.js": "/stringCalculatorTDD/static/js/453.119a1176.chunk.js",
+    "index.html": "/stringCalculatorTDD/index.html",
+    "main.d2063e3d.css.map": "/stringCalculatorTDD/static/css/main.d2063e3d.css.map",
+    "main.0fac3e92.js.map": "/stringCalculatorTDD/static/js/main.0fac3e92.js.map",
+    "453.119a1176.chunk.js.map": "/stringCalculatorTDD/static/js/453.119a1176.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2063e3d.css",
+    "static/js/main.0fac3e92.js"
+  ]
+}
