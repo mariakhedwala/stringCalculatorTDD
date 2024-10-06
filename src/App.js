@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React, { useState } from 'react';
+import { add } from './StringCalculator';
 
 function App() {
+  const [query, setQuery] = useState('');
+  const [result, setResult] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App calculator">
+      <h1>String Calculator</h1>
+      <div className='input-wrap'>
+        <input
+          type="text"
+          placeholder="Enter numbers"
+          value={query}
+          onChange={(e) => { setQuery(e.target.value) }}
+        />
+        <button onClick={() => { setResult(add(query)) }}>Calculate</button>
+        <div className='result'>Result: {result}</div>
+      </div>
     </div>
   );
 }
